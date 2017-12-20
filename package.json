@@ -1,5 +1,5 @@
 {
-  "name": "typescript-module-template",
+  "name": "open-categories",
   "version": "1.0.0",
   "description": "A typescript boilerplate to publish modules to npm",
   "main": "out/index.js",

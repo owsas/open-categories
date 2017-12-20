@@ -35,5 +35,5 @@ export class OpenCategories {
   }
 }
 
-const r = OpenCategories.search('pollo');
-console.log(JSON.stringify(r, null, 2));
+// const r = OpenCategories.search('');
+// console.log(JSON.stringify(r, null, 2));
