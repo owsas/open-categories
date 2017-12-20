@@ -1,0 +1,79 @@
+# Food
+food:
+  translations:
+    es: comida
+
+## Food (meat)
+food_meat:
+  translations:
+    es: carne
+food_meat_lamb:
+  translations:
+    es: cordero
+food_meat_chicken:
+  translations:
+    es: pollo
+food_meat_cow:
+  translations:
+    es: vaca
+food_meat_fish:
+  translations:
+    es: pescado
+
+## Food (fast food)
+food_fast:
+  translations:
+    es: comida rápida
+    en: fast food
+food_fast_pizza:
+  translations:
+    es: pizza
+food_fast_hamburguer:
+  translations:
+    es: hamburguesa
+food_fast_taco:
+  translations:
+    es: tacos
+food_fast_burrito:
+  translations:
+    es: burritos
+food_fast_hotDog:
+  translations:
+    es: perros calientes
+    en: hot dog
+
+## Food (drinks)
+food_drinks:
+  translations:
+    es: bebidas
+food_drinks_juice:
+  translations:
+    es: jugo
+
+## Food (drinks - liquor)
+food_drinks_liquor:
+  translations:
+    es: licor
+food_drinks_liquor_beer:
+  translations:
+    es: cerveza
+food_drinks_liquor_aguardiente:
+  translations:
+    es: aguardiente
+food_drinks_liquor_rum:
+  translations:
+    es: ron
+food_drinks_liquor_whiskey:
+  translations:
+    es: whiskey
+
+# Fashion
+fashion:
+  translations:
+    es: moda
+fashion_watches:
+  translations:
+    es: relojes
+fashion_jewelry:
+  translations:
+    es: joyería
