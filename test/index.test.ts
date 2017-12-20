@@ -1,5 +1,34 @@
-import { MyModule } from '../src/index';
+import * as is from 'is';
+import { OpenCategories } from '../src/index';
 
-test('test', () => {
-  expect(true).toBe(true);
+describe('#getCategory', () => {
+  test('should be able to get a topmost category', () => {
+    const c = OpenCategories.getCategory('food');
+    expect(is.object(c)).toBe(true);
+  });
+
+  test('should be able to get a nested category', () => {
+    const c = OpenCategories.getCategory('food_meat_lamb');
+    expect(is.object(c)).toBe(true);
+  });
+
+  test('should return undefined on not found category', () => {
+    const c = OpenCategories.getCategory('food_meat_lambafeajfeiafeioa');
+    expect(is.object(c)).toBe(false);
+  });
+});
+
+describe('#getTopMostCategory', () => {
+  test('should be able to get the topmost category for food_meat_lamb', () => {
+    const c = OpenCategories.getTopMostCategory('food_meat_lamb');
+    expect(is.object(c)).toBe(true);
+    expect(c.translations.es).toEqual('comida');
+  });
+});
+
+describe('#getParentCategory', () => {
+  test('should be able to get the parent category for food_meat_lamb', () => {
+    const c = OpenCategories.getParentCategory('food_meat_lamb');
+    expect(c.translations.es).toEqual('carne');
+  });
 });

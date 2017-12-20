@@ -7,7 +7,8 @@
     "test": "jest --ci --silent",
     "build": "tsc",
     "watch": "tsc -w",
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "postbuild": "node out/_postBuild.js"
   },
   "keywords": [],
   "author": "Juan Camilo Guarín P",
@@ -25,7 +26,8 @@
   "dependencies": {
     "fuse.js": "^3.2.0",
     "is": "^3.2.1",
-    "js-yaml": "^3.10.0"
+    "js-yaml": "^3.10.0",
+    "require-yaml": "^0.0.1"
   },
   "jest": {
     "roots": [
