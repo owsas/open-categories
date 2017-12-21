@@ -3,19 +3,118 @@ food:
   translations:
     es: comida
 
+## Food styles
+food_italian:
+  translations:
+    es: comida italiana
+    en: italian food
+  synonyms:
+    - pizza
+    - pomodoro
+
+food_thai:
+  translations:
+    es: comida thai
+    en: thai food
+
+food_japanese:
+  translations:
+    es: comida japonesa
+    en: japanese food
+  synonyms:
+    - arigato
+
+food_japanese_sushi:
+  translations:
+    es: comida sushi
+    en: sushi food
+
+food_chinese:
+  translations:
+    es: comida china
+    en: chinese food
+
+food_brazilian:
+  translations:
+    es: comida brasilera
+    en: brazilian food
+  synonyms:
+    - rodizzio
+    - brasileña
+    - brasil
+  
+food_mexican:
+  translations:
+    es: comida mexicana
+    en: mexican food
+  synonyms:
+    - taco
+    - burrito
+    - enchilada
+    - tequila
+    - frijoles
+  related:
+    - food_drinks_liquor_tequila
+    - food_fast_burritos
+    - food_fast_tacos
+    - food_legume_beans
+
+food_latin:
+  translations:
+    es: comida latina
+    en: latin food
+
+food_colombian:
+  translations:
+    es: comida colombiana
+    en: colombiana food
+  related:
+    - food_legume_beans
+    - food_drinks_liquor_aguardiente
+
+food_colombian_arepas:
+  translations:
+    es: arepas
+
+food_greek:
+  translations:
+    es: comida griega
+    en: greek food
+
+## Food (legume)
+food_legume:
+  translations:
+    es: legumbres
+
+food_legume_beans:
+  translations:
+    es: fríjoles
+
+food_legume_lentils:
+  translations:
+    es: lentejas
+
 ## Food (meat)
 food_meat:
   translations:
     es: carne
+
 food_meat_lamb:
   translations:
     es: cordero
+
 food_meat_chicken:
   translations:
     es: pollo
+
 food_meat_cow:
   translations:
     es: vaca
+  synonyms:
+    - steak
+    - asado
+    - carne
+
 food_meat_fish:
   translations:
     es: pescado
@@ -25,18 +124,23 @@ food_fast:
   translations:
     es: comida rápida
     en: fast food
+
 food_fast_pizza:
   translations:
     es: pizza
+
 food_fast_hamburguer:
   translations:
     es: hamburguesa
-food_fast_taco:
+
+food_fast_tacos:
   translations:
     es: tacos
-food_fast_burrito:
+
+food_fast_burritos:
   translations:
     es: burritos
+
 food_fast_hotDog:
   translations:
     es: perros calientes
@@ -46,6 +150,7 @@ food_fast_hotDog:
 food_drinks:
   translations:
     es: bebidas
+
 food_drinks_juice:
   translations:
     es: jugo
@@ -54,26 +159,222 @@ food_drinks_juice:
 food_drinks_liquor:
   translations:
     es: licor
+
 food_drinks_liquor_beer:
   translations:
     es: cerveza
+
 food_drinks_liquor_aguardiente:
   translations:
     es: aguardiente
+
 food_drinks_liquor_rum:
   translations:
     es: ron
+
+food_drinks_liquor_wine:
+  translations:
+    es: vino
+
 food_drinks_liquor_whiskey:
   translations:
     es: whiskey
+
+food_drinks_liquor_tequila:
+  translations:
+    es: tequila
+
+## Food (desserts)
+food_desserts:
+  translations: 
+    es: postres
+
+food_deserts_cakes:
+  translations: 
+    es: tortas
+
+food_deserts_chocolate:
+  translations: 
+    es: postres de chocolate
+    en: chocolate desserts
+
+food_deserts_fruit:
+  translations: 
+    es: postres de fruta
+    en: fruit desserts
 
 # Fashion
 fashion:
   translations:
     es: moda
+
 fashion_watches:
   translations:
     es: relojes
+  synonyms:
+    - timepiece
+
 fashion_jewelry:
   translations:
     es: joyería
+
+fashion_purses:
+  translations:
+    es: bolsos
+
+## Fashion (tshirts)
+fashion_tshirts: 
+  translations:
+    es: camisetas
+
+fashion_tshirts_male:
+  translations:
+    es: camisetas (hombre)
+
+fashion_tshirts_female:
+  translations:
+    es: camisetas (mujer)
+
+## Fashion (shirts)
+fashion_shirts:
+  translations:
+    es: camisas
+
+fashion_shirts_male:
+  translations:
+    es: camisas (hombre)
+    en: shirts (male)
+
+fashion_shirts_female:
+  translations:
+    es: camisas (mujer)
+    en: shirts (female)
+
+## Fashion (shorts)
+fashion_shorts:
+  translations:
+    es: pantalonetas
+
+fashion_shorts_male:
+  translations:
+    es: pantalonetas (hombre)
+    en: shorts (male)
+
+fashion_shorts_female:
+  translations:
+    es: pantalonetas (mujer)
+    en: shorts (female)
+
+## Fashion (coats)
+fashion_coats:
+  translations:
+    es: abrigos
+
+fashion_coats_male:
+  translations:
+    es: abrigos (hombre)
+    en: coats (male)
+
+fashion_coats_female:
+  translations:
+    es: abrigos (mujer)
+    en: coats (female)
+
+## Fashion (pants)
+fashion_pants:
+  translations:
+    es: pantalones
+
+fashion_pants_male:
+  translations:
+    es: pantalones (hombre)
+    en: pants (male)
+
+fashion_pants_female:
+  translations:
+    es: pantalones (mujer)
+    en: pants (female)
+
+## Fashion (shoes)
+fashion_shoes:
+  translations:
+    es: zapatos
+
+fashion_shoes_male:
+  translations:
+    es: zapatos (hombre)
+    en: shoes (male)
+
+fashion_shoes_female:
+  translations:
+    es: zapatos (mujer)
+    en: shoes (female)
+
+fashion_shoes_heels:
+  translations:
+    es: tacones
+    en: high heels
+
+### Fashion (shoes - sport)
+fashion_shoes_sport:
+  translations:
+    es: zapatos deportivos
+    en: sport shoes
+
+fashion_shoes_sport_male:
+  translations:
+    es: zapatos deportivos (hombre)
+    en: sport shoes (male)
+
+fashion_shoes_sport_female:
+  translations:
+    es: zapatos deportivos (mujer)
+    en: sport shoes (female)
+
+# Tech
+tech:
+  translations:
+    es: tecnología
+
+tech_tablet:
+  translations:
+    es: gablets
+
+tech_gadgets:
+  translations:
+    es: gadgets
+
+tech_pc:
+  translations:
+    es: computadores
+    en: computers (pc)
+
+tech_pc_imac:
+  translations:
+    es: iMac
+    en: iMac
+
+tech_pc_spare:
+  translations:
+    es: partes de arreglo para computadores
+    en: spare parts for computers
+
+tech_pc_fix:
+  translations:
+    es: arreglo de computadores / partes de arreglo
+    en: computer fix / spare parts
+
+# Tech (smartphones)
+tech_smartphones:
+  translations:
+    es: smartphones
+
+tech_smartphones_android:
+  transliations:
+    es: teléfonos android
+    en: android phones
+
+tech_smartphones_ios:
+  transliations:
+    es: iphone
+    en: iphone
