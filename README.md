@@ -5,7 +5,8 @@ An open categorization system for platforms that handle information about food, 
 <!-- TOC -->
 
 - [Open Categories](#open-categories)
-  - [Important: We need collaboration with the inclusion of new categories](#important-we-need-collaboration-with-the-inclusion-of-new-categories)
+  - [Why Open Categories?](#why-open-categories)
+  - [Principles](#principles)
   - [Installation](#installation)
   - [Usage](#usage)
     - [Importing the class](#importing-the-class)
@@ -21,10 +22,44 @@ An open categorization system for platforms that handle information about food, 
 
 <!-- /TOC -->
 
-## Important: We need collaboration with the inclusion of new categories
-See categories.yaml to see the different categories we support for now.
+## Why Open Categories?
 
-This is still a work in progress.
+Open Categories aim to be an aid for the developers and the companies that need to categorize information.
+
+These are some of the products that may use Open Categories. For example:
+  - AI Applications
+    - Image recognition
+    - Chatbots
+  - Online stores
+  - Search engines
+  - Games (For categorizing in-game items)
+
+We want to build a categorization system that is both semantic, fast and useful for everybody to use, and not to reinvent the wheel on each new application.
+
+At the end, having a common categorization system makes it easier to communicate between different apps and platforms.
+
+## Principles
+
+In Open Categories, whatever can be categorized with a simple slug. A slug is a piece of texts that contains very useful information.
+
+For example, if we had the string `food_fast_pizza`, we could split it in the following way:
+- `food_fast_pizza`: The sub sub category (Pizza)
+- `food_fast`: The sub category (Fast Food)
+- `food`: The topmost category (Food in general)
+
+So, with one simple string we can classify whatever.
+
+Let's take a look at other example: 
+- `food_drinks_liquor_tequila`: The sub sub sub category (Tequila)
+- `food_drinks_liquor`: The sub sub category (Liquor)
+- `food_drinks`: The sub category (Drinks)
+- `food`: The topmost category (Food in general)
+
+This categorization is available as a node module, but we provide JSON and YAML files for you to copy and use with other languages :)
+
+This module will help you parse and understand more about the categories, and also perform fuzzy searches
+
+We are also commited to `semver`, so our versions and releases will be semantic 
 
 ## Installation
 With npm: 
@@ -131,6 +166,8 @@ console.log(topMost);
 
 - Clone this repo, and start adding your code in the `index.ts` file, or adding categories / translations in `categories.yaml`
 - When you are done, write the tests in the `index.test.ts` file. For testing, this repo works with [Jest](https://facebook.github.io/jest/).
+
+**Thank you for helping us build a better categorization for the world :)**
 
 ## Dev Features
 * Testing with Jest
