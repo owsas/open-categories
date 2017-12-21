@@ -1,6 +1,6 @@
 {
   "name": "open-categories",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A typescript boilerplate to publish modules to npm",
   "main": "out/index.js",
   "scripts": {
