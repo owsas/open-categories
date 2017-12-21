@@ -17,6 +17,7 @@ export class Converter {
       const path = k;
       const split = k.split('_');
       let name = split.pop();
+      let topmost = false;
       const translationsArray = [];
 
       if (doc[k]['translations'] && doc[k]['translations']['en']) {
@@ -32,7 +33,11 @@ export class Converter {
         });
       }
 
-      arr.push({ name, translationsArray, ...doc[k], path: k });
+      if (path.split('_').length === 1) { // topmost category
+        topmost = true;
+      }
+
+      arr.push({ topmost, name, translationsArray, ...doc[k], path: k });
     });
 
     return arr;
