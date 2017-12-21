@@ -68,6 +68,9 @@ food_colombian:
   translations:
     es: comida colombiana
     en: colombiana food
+  synonyms:
+    - bandeja paisa
+    - arepas
   related:
     - food_legume_beans
     - food_drinks_liquor_aguardiente
@@ -75,6 +78,10 @@ food_colombian:
 food_colombian_arepas:
   translations:
     es: arepas
+
+food_colombian_empanadas:
+  translations:
+    es: empanadas
 
 food_greek:
   translations:
@@ -207,6 +214,9 @@ food_deserts_fruit:
 fashion:
   translations:
     es: moda
+  synonyms:
+    - clothes
+    - ropa
 
 fashion_watches:
   translations:
@@ -264,6 +274,11 @@ fashion_shorts_female:
   translations:
     es: pantalonetas (mujer)
     en: shorts (female)
+
+## Fashion (blouses)
+fashion_blouses:
+  translations:
+    es: blusas
 
 ## Fashion (coats)
 fashion_coats:

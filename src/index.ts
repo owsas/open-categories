@@ -3,37 +3,35 @@ import * as path from 'path';
 import * as yaml from 'js-yaml';
 import * as Fuse from 'fuse.js';
 
-import { Converter } from './Converter';
-
-const doc = yaml.safeLoad(
-  fs.readFileSync(path.resolve(__dirname, '..', 'categories.yaml'), 'utf8'),
-);
-
-const asArray = Converter.convertCategories();
-const fuse = new Fuse(asArray, { keys: ['name', 'translationsArray'] });
+const categoriesArray = require('../categories-array');
+const categoriesTree = require('../categories-tree');
 
 export class OpenCategories {
-  static Converter = Converter;
+
+  static fuse = new Fuse(
+    categoriesArray, { keys: ['name', 'synonyms', 'translationsArray'] },
+  );
 
   static search(text: string) {
-    return fuse.search(text);
+    return OpenCategories.fuse.search(text);
+  }
+
+  static setFuseOptions(opts: Fuse.FuseOptions) {
+    OpenCategories.fuse = new Fuse(categoriesArray, opts);
   }
 
   static getCategory(slug: string): any {
-    return doc[slug];
+    return categoriesTree[slug];
   }
 
   static getTopMostCategory(slug: string): any {
     const array = slug.split('_');
-    return doc[array[0]];
+    return categoriesTree[array[0]];
   }
 
   static getParentCategory(slug: string): any {
     const array = slug.split('_');
     array.pop();
-    return doc[array.join('_')];
+    return categoriesTree[array.join('_')];
   }
 }
-
-// const r = OpenCategories.search('');
-// console.log(JSON.stringify(r, null, 2));

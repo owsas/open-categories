@@ -32,3 +32,19 @@ describe('#getParentCategory', () => {
     expect(c.translations.es).toEqual('carne');
   });
 });
+
+describe('#search', () => {
+  test('should call fuse.search', () => {
+    const spy = jest.spyOn(OpenCategories.fuse, 'search');
+    const c = OpenCategories.search('colomb');
+    expect(spy).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('#setFuseOptions', () => {
+  test('should change the fuse instance', () => {
+    const instance = OpenCategories.fuse;
+    OpenCategories.setFuseOptions({ keys: ['name'] });
+    expect(instance).not.toEqual(OpenCategories.fuse);
+  });
+});
