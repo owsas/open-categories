@@ -1,4 +1,8 @@
-import * as path from 'path';
-import { Converter } from './converter';
+/**
+ * Builds the categories-array and categories-tree files
+ */
 
-Converter.writeToFile(path.resolve(__dirname, 'categories.json'));
+import * as path from 'path';
+import { Converter } from './Converter';
+
+Converter.writeToPath(path.resolve(__dirname, '..'));
