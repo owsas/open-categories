@@ -23,6 +23,7 @@ describe('#getTopMostCategory', () => {
     const c = OpenCategories.getTopMostCategory('food_meat_lamb');
     expect(is.object(c)).toBe(true);
     expect(c.translations.es).toEqual('comida');
+    expect(c.topmost).toBe(true);
   });
 });
 
