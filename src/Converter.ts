@@ -3,10 +3,13 @@ import * as path from 'path';
 import * as yaml from 'js-yaml';
 
 export class Converter {
-  static convertCategories(): any[] {
-    const doc = yaml.safeLoad(
-      fs.readFileSync(path.resolve(__dirname, '..', 'categories.yaml'), 'utf8'),
-    );
+  static getTreeRaw() {
+    return yaml.safeLoad(
+    fs.readFileSync(path.resolve(__dirname, '..', 'categories.yaml'), 'utf8'));
+  }
+
+  static convertCategories() {
+    const doc = Converter.getTreeRaw();
 
     const arr = [];
 
@@ -35,9 +38,33 @@ export class Converter {
     return arr;
   }
 
-  static writeToFile(path: string) {
+  static getTree() {
     const arr = Converter.convertCategories();
-    fs.writeFileSync(path, JSON.stringify(arr), { encoding: 'utf8' });
+    const obj = {};
+
+    arr.forEach((category) => {
+      obj[category.path] = category;
+    });
+
+    return obj;
+  }
+
+  static writeToPath(destination: string) {
+    const arr = Converter.convertCategories();
+    const doc = Converter.getTree();
+    
+    fs.writeFileSync(
+      path.resolve(destination, 'categories-array.json'), 
+      JSON.stringify(arr), 
+      { encoding: 'utf8' },
+    );
+
+    // write tree
+    fs.writeFileSync(
+      path.resolve(destination, 'categories-tree.json'), 
+      JSON.stringify(doc), 
+      { encoding: 'utf8' },
+    );
   }
 }
 
