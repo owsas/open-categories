@@ -351,9 +351,9 @@ tech:
   translations:
     es: tecnología
 
-tech_tablet:
+tech_tablets:
   translations:
-    es: gablets
+    es: tablets
 
 tech_gadgets:
   translations:
@@ -393,3 +393,117 @@ tech_smartphones_ios:
   transliations:
     es: iphone
     en: iphone
+
+
+# Culture and events
+cultureEvents:
+  translations:
+    es: cultura y eventos
+    en: culture and events
+
+cultureEvents_cinema:
+  translations:
+    es: cine
+
+cultureEvents_theater:
+  translations:
+    es: obras de teatro
+
+cultureEvents_museums:
+  translations:
+    es: museos
+
+cultureEvents_concerts:
+  translations:
+    es: conciertos
+
+
+# Party
+party:
+  translations:
+    es: de fiesta
+  related:
+    - food_drinks
+    - food_fast
+
+
+# Home
+home:
+  translations:
+    es: hogar
+
+home_decoration:
+  translations:
+    es: decoración
+  related:
+    - home_menage
+
+home_outdoors:
+  translations:
+    es: aire libre y jardín
+
+home_automobile:
+  translations:
+    es: autoaccesorios
+
+home_bathroom:
+  translations:
+    es: baños
+
+home_kitchen:
+  translations:
+    es: cocinas
+
+home_construction:
+  translations:
+    es: construcción
+
+home_appliances:
+  translations:
+    es: electrodomésticos
+  related:
+    - home_technology
+
+home_hardware:
+  translations:
+    es: ferretería
+
+home_tools:
+  translations:
+    es: herramientas
+
+home_lighting:
+  translations:
+    es: iluminación
+
+home_menage:
+  translations:
+    es: menaje
+
+home_furniture:
+  translations:
+    es: muebles
+
+home_organizationCleaning:
+  translations:
+    es: organización y limpieza
+    en: organization and cleaning
+  
+home_painting:
+  translations:
+    es: pinturas
+
+home_floorsWalls:
+  translations:
+    es: pisos y paredes
+    en: floor and walls
+
+home_doorsWindows:
+  translations:
+    es: puertas y ventanas
+    en: doors and windows
+
+home_technology:
+  translations:
+    es: tecnohogar
+    en: technohome
