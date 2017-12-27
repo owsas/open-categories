@@ -3,6 +3,14 @@ food:
   translations:
     es: comida
 
+food_salad:
+  translations:
+    es: ensalada
+
+food_soup:
+  translations:
+    es: sopas
+
 ## Food styles
 food_italian:
   translations:
@@ -88,6 +96,19 @@ food_greek:
     es: comida griega
     en: greek food
 
+food_peruvian:
+  translations:
+    es: comida peruana
+    en: peruvian food
+
+food_vegetarian:
+  translations:
+    es: comida vegetariana
+    en: vegetarian food
+  related:
+    - food_salad
+    - food_legume
+
 ## Food (legume)
 food_legume:
   translations:
@@ -121,6 +142,13 @@ food_meat_cow:
     - steak
     - asado
     - carne
+
+food_meat_pork:
+  translations:
+    es: cerdo
+  synonyms:
+    - cochino
+    - cochinito
 
 food_meat_fish:
   translations:
@@ -162,6 +190,18 @@ food_drinks_juice:
   translations:
     es: jugo
 
+food_drinks_coffee:
+  translations:
+    es: café (bebida)
+
+food_drinks_tea:
+  translations:
+    es: té (bebida)
+
+food_drinks_soda:
+  translations:
+    es: Gaseosa / soda
+
 ## Food (drinks - liquor)
 food_drinks_liquor:
   translations:
@@ -191,10 +231,22 @@ food_drinks_liquor_tequila:
   translations:
     es: tequila
 
+## Food (pastry)
+food_pastry: 
+  translations:
+    es: pastelería
+  related:
+    - food_desserts
+    - food_drinks
+
 ## Food (desserts)
 food_desserts:
   translations: 
     es: postres
+
+food_deserts_iceCream:
+  translations: 
+    es: helado
 
 food_deserts_cakes:
   translations: 
