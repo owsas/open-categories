@@ -49,3 +49,26 @@ describe('#setFuseOptions', () => {
     expect(instance).not.toEqual(OpenCategories.fuse);
   });
 });
+
+describe.only('#getAllSlugsForCategories', () => {
+  test('should return the correct slugs', () => {
+    const categories = OpenCategories.getAllSlugsForCategories(
+      ['food_colombian_arepas', 'food_fast', 'food_drinks_liquor'],
+    );
+    expect(categories).toEqual(
+      ['food_colombian_arepas', 'food_colombian', 'food', 'food_fast', 
+        'food_drinks_liquor', 'food_drinks'],
+      );
+  });
+
+  test('should return the correct slugs (second test)', () => {
+    const categories = OpenCategories.getAllSlugsForCategories(
+      ['fashion_pants','fashion_jewelry', 'cultureEvents_cinema', 'home_bathroom'],
+    );
+    expect(categories).toEqual(
+      ['fashion_pants', 'fashion', 'fashion_jewelry', 'cultureEvents_cinema',
+        'cultureEvents', 'home_bathroom', 'home'],
+      );
+  });
+});
+
