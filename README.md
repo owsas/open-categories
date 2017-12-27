@@ -14,6 +14,7 @@ An open categorization system for platforms that handle information about food, 
     - [Searching](#searching)
     - [Getting the topmost category for any subcategory](#getting-the-topmost-category-for-any-subcategory)
     - [Getting the parent category](#getting-the-parent-category)
+    - [Getting all the slugs for one or several given categories](#getting-all-the-slugs-for-one-or-several-given-categories)
   - [Files](#files)
   - [Collaboration](#collaboration)
   - [Dev Features](#dev-features)
@@ -155,6 +156,23 @@ console.log(topMost);
 */
 ```
 
+### Getting all the slugs for one or several given categories
+
+This is useful for understanding all the posible categories and subcategories that are present in any given array of slugs
+
+For example: `['food_drinks_liquor']` => `['food','food_drinks','food_drinks_liquor']` 
+
+```js
+const slugs = OpenCategories.getAllSlugsForCategories(['food_drinks_liquor', 'fashion_jewelry']);
+console.log(slugs);
+/*
+food
+food_drinks
+food_drinks_liquor
+fashion
+fashion_jewelry
+*/
+```
 
 ## Files
 - `categories.yaml`: Main file for the categories
