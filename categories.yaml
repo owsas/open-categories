@@ -418,6 +418,17 @@ cultureEvents_concerts:
     es: conciertos
 
 
+# Chain stores
+chainStores:
+  translations:
+    es: almacenes de cadena
+    en: chain stores
+  related:
+    - food
+    - fashion
+    - tech
+    - home    
+
 # Party
 party:
   translations:
