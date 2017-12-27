@@ -427,7 +427,12 @@ chainStores:
     - food
     - fashion
     - tech
-    - home    
+    - home
+
+# mall
+mall:
+  translations:
+    es: centro comercial
 
 # Party
 party:
