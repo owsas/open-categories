@@ -50,7 +50,7 @@ describe('#setFuseOptions', () => {
   });
 });
 
-describe.only('#getAllSlugsForCategories', () => {
+describe('#getAllSlugsForCategories', () => {
   test('should return the correct slugs', () => {
     const categories = OpenCategories.getAllSlugsForCategories(
       ['food_colombian_arepas', 'food_fast', 'food_drinks_liquor'],
