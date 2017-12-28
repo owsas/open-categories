@@ -1,6 +1,6 @@
 {
   "name": "open-categories",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "An open categorization system for platforms that handle information about food, fashion, technology and others",
   "main": "out/index.js",
   "scripts": {
