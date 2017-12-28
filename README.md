@@ -2,6 +2,8 @@
 
 An open categorization system for platforms that handle information about food, fashion, technology and others
 
+See ALL the categories in [CATEGORIES.md](./CATEGORIES.md)
+
 <!-- TOC -->
 
 - [Open Categories](#open-categories)
