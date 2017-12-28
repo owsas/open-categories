@@ -231,6 +231,16 @@ food_drinks_liquor_tequila:
   translations:
     es: tequila
 
+## Food (cafeteria)
+food_cafeteria:
+  translations:
+    es: cafetería
+  related:
+    - food_drinks_coffee
+    - food_pastry
+    - food_desserts
+    - food_drinks_juice
+
 ## Food (pastry)
 food_pastry: 
   translations:
