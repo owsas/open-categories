@@ -12,6 +12,11 @@ describe('#getCategory', () => {
     expect(is.object(c)).toBe(true);
   });
 
+  test('returned category should have the right paths', () => {
+    const c = OpenCategories.getCategory('food_colombian_arepas');
+    expect(c.paths).toEqual(['food_colombian_arepas', 'food_colombian', 'food'])
+  });
+
   test('should return undefined on not found category', () => {
     const c = OpenCategories.getCategory('food_meat_lambafeajfeiafeioa');
     expect(is.object(c)).toBe(false);

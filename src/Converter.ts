@@ -2,6 +2,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 
+import { OpenCategories } from './index';
+
 export class Converter {
   static getTreeRaw() {
     return yaml.safeLoad(
@@ -37,7 +39,14 @@ export class Converter {
         topmost = true;
       }
 
-      arr.push({ topmost, name, translationsArray, ...doc[k], path: k });
+      arr.push({ 
+        topmost, 
+        name, 
+        translationsArray, 
+        ...doc[k], 
+        path: k, 
+        paths: OpenCategories.getAllSlugsForCategories([k]), 
+      });
     });
 
     return arr;
