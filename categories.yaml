@@ -280,6 +280,68 @@ fashion:
     - clothes
     - ropa
 
+fashion_fragrance:
+  translations:
+    es: perfumes
+  synonyms:
+    - fragancia
+    - perfumería
+    - parfum
+
+fashion_accessories:
+  translations:
+    es: accesorios
+
+fashion_uniforms:
+  translations:
+    es: uniformes
+
+fashion_underwear:
+  translations:
+    es: ropa interior (hombres)
+    en: underwear (male)
+
+fashion_lingerie:
+  translations:
+    es: ropa interior (mujeres)
+    en: lingerie (female)
+
+fashion_sports:
+  translations:
+    es: ropa deportiva
+    en: sports fashion
+  synonyms:
+    - deportes
+    - deportivo
+    - excercise
+    - ejercicio
+
+fashion_male:
+  translations:
+    en: Fashion for men
+    es: Moda para hombre
+  related:
+    - fashion_coats_male
+    - fashion_pants_male
+    - fashion_shoes_male
+    - fashion_shorts_male
+    - fashion_tshirts_male
+    - fashion_shoes_male
+    - fashion_shoes_sport_male
+
+fashion_female:
+  translations:
+    en: Fashion for men
+    es: Moda para mujer
+  related:
+    - fashion_coats_female
+    - fashion_pants_female
+    - fashion_shoes_female
+    - fashion_shorts_female
+    - fashion_tshirts_female
+    - fashion_shoes_female
+    - fashion_shoes_sport_female
+
 fashion_watches:
   translations:
     es: relojes
@@ -386,6 +448,11 @@ fashion_shoes_female:
   translations:
     es: zapatos (mujer)
     en: shoes (female)
+
+fashion_shoes_kids:
+  translations:
+    es: zapatos (niños)
+    en: shoes (kids)
 
 fashion_shoes_heels:
   translations:
@@ -585,3 +652,112 @@ home_technology:
   translations:
     es: tecnohogar
     en: technohome
+
+
+# Bancos
+banks:
+  translations:
+    es: bancos
+  synonyms:
+    - banca
+
+
+# Hotel
+hotel:
+  translations:
+    es: hoteles
+    en: hotels
+  synonyms:
+    - banca
+
+
+# Toys
+toys:
+  translations:
+    es: juguetes
+
+toys_costumes:
+  translations:
+    es: disfraces
+
+
+# Videogames
+videogames:
+  translations:
+    es: videojuegos y consolas
+
+videogames_consoles:
+  translations:
+    es: consolas de videojuegos
+
+videogames_games:
+  translations:
+    es: juegos de video
+  synonyms:
+    - videojuegos
+    - videogames
+
+
+# Transport
+transport:
+  translations:
+    es: transporte
+
+transport_bikes:
+  translations:
+    es: bicicletas
+
+transport_motorcycles:
+  translations:
+    es: motocicletas
+
+transport_airlines:
+  translations:
+    es: aerolíneas y tiquetes
+    en: airlines and tickets
+
+transport_cars:
+  translations:
+    es: carros
+  synonyms:
+    - automovil
+    - automobile
+    - auto
+
+
+# Office
+office:
+  translations:
+    es: oficina
+
+office_agendas:
+  translations:
+    es: agendas
+  synonyms:
+    - cuadernos
+    - libretas
+    - notebook
+
+
+# Health
+health:
+  translations:
+    es: salud y belleza
+    en: health and beauty
+
+health_beauty:
+  translations:
+    es: belleza
+  synonyms:
+    - peluquerias
+    - hairdressing
+    - uñas
+    - nails
+
+health_gym:
+  translations:
+    es: gimnasio
+
+health_drugstore:
+  translations:
+    es: droguería
