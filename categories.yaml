@@ -668,7 +668,10 @@ hotel:
     es: hoteles
     en: hotels
   synonyms:
-    - banca
+    - estancia
+    - estadía
+    - alojamiento
+    - hebergement
 
 
 # Toys
