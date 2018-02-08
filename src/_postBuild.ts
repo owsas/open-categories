@@ -24,7 +24,13 @@ for (const key in categoriesTree) {
     str += `## ${key}\n`;
   }
 
-  str += `* ${key}\n`;
+  if (categoriesTree[key].synonyms) {
+    str += `* ${key}. Synonyms: *${categoriesTree[key].synonyms.join(', ')}*\n`;
+    
+  } else {
+    str += `* ${key}\n`;
+  }
+
 }
 
 fs.writeFileSync(
