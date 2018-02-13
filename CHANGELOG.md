@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v1.1.0
+
+### New categories
+* fashion_caps
+* fashion_hats
+* fashion_suits
+* fashion_pajamas
+* fashion_swimming
+* fashion_babies
+* fashion_cloth
+* finance_*
+* services_*
+* education_*
+* travel_*
+* lifestyle_*
+* adult
+* health\_sport\_*
+
+### Renamed categories
+* hotel -> travel_hotel
+* tourism -> travel_tourism
+
 ## v1.0.11
 
 * Created [CATEGORIES.md](./CATEGORIES.md) file
