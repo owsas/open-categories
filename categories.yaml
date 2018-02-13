@@ -109,6 +109,11 @@ food_vegetarian:
     - food_salad
     - food_legume
 
+## Food (candies)
+food_candies:
+  translations:
+    es: dulces
+
 ## Food (legume)
 food_legume:
   translations:
@@ -167,6 +172,12 @@ food_fast_pizza:
 food_fast_hamburguer:
   translations:
     es: hamburguesa
+
+food_fast_sandwich:
+  translations:
+    es: emparedados
+  synonyms:
+    - sandwich
 
 food_fast_tacos:
   translations:
@@ -300,11 +311,15 @@ fashion_underwear:
   translations:
     es: ropa interior (hombres)
     en: underwear (male)
+  related:
+    - fashion_lingerie
 
 fashion_lingerie:
   translations:
     es: ropa interior (mujeres)
     en: lingerie (female)
+  related:
+    - fashion_underwear
 
 fashion_sports:
   translations:
@@ -439,6 +454,11 @@ fashion_shoes:
   translations:
     es: zapatos
 
+fashion_shoes_elegant:
+  translations:
+    es: zapatos formales
+    en: elegant shoes
+
 fashion_shoes_male:
   translations:
     es: zapatos (hombre)
@@ -474,6 +494,44 @@ fashion_shoes_sport_female:
   translations:
     es: zapatos deportivos (mujer)
     en: sport shoes (female)
+
+fashion_caps:
+  translations:
+    es: gorras
+  synonyms:
+    - cachuchas
+    - viceras
+
+fashion_hats:
+  translations:
+    es: sombreros
+  synonyms:
+    - gorros
+
+fashion_suits:
+  translations:
+    es: trajes formales
+  synonyms:
+    - tuxedo
+
+fashion_pajamas:
+  translations:
+    es: pijamas
+
+fashion_swimming:
+  translations:
+    es: trajes de baño
+    en: swimming fashion
+
+fashion_babies:
+  translations:
+    es: ropa para bebés
+    en: babies fashion
+
+fashion_cloth:
+  translations:
+    es: telas
+
 
 # Tech
 tech:
@@ -514,14 +572,81 @@ tech_smartphones:
     es: smartphones
 
 tech_smartphones_android:
-  transliations:
+  translations:
     es: teléfonos android
     en: android phones
 
 tech_smartphones_ios:
-  transliations:
+  translations:
     es: iphone
     en: iphone
+
+tech_cameras:
+  translations:
+    es: cámaras fotográficas
+    en: photograpic cameras
+
+
+# Finance
+finance:
+  translations:
+    es: finanzas
+  synonyms:
+    - money
+    - dinero
+
+finance_insurance:
+  translations:
+    es: aseguradoras
+  synonyms:
+    - seguros
+
+finance_casino:
+  translations:
+    es: casinos
+  synonyms:
+    - bid
+    - apuestas
+
+finance_banks:
+  translations:
+    es: bancos
+  synonyms:
+    - banca
+
+finance_lotto:
+  translations:
+    es: loterías
+  synonyms:
+    - bid
+
+finance_moneyExchange:
+  translations:
+    es: cambio de dinero
+  synonyms:
+    - divisas
+
+
+# Servicios
+services:
+  translations:
+    es: servicios
+
+services_laundries:
+  translations:
+    es: lavanderías
+
+services_advertision:
+  translations:
+    es: publicidad
+
+services_photography:
+  translations:
+    es: fotografía
+
+services_counseling:
+  translations:
+    es: asesorías
 
 
 # Culture and events
@@ -546,6 +671,9 @@ cultureEvents_concerts:
   translations:
     es: conciertos
 
+cultureEvents_events:
+  translations:
+    es: eventos
 
 # Chain stores
 chainStores:
@@ -654,16 +782,12 @@ home_technology:
     en: technohome
 
 
-# Bancos
-banks:
+# Travel
+travel:
   translations:
-    es: bancos
-  synonyms:
-    - banca
+    es: viajes
 
-
-# Hotel
-hotel:
+travel_hotel:
   translations:
     es: hoteles
     en: hotels
@@ -672,6 +796,10 @@ hotel:
     - estadía
     - alojamiento
     - hebergement
+
+travel_tourism:
+  translations:
+    es: turismo
 
 
 # Toys
@@ -727,20 +855,30 @@ transport_cars:
     - automobile
     - auto
 
+transport_technicalWorkshop:
+  translations:
+    es: taller mecánico
+  synonyms:
+    - reparación
+    - repair
 
 # Office
 office:
   translations:
     es: oficina
 
-office_agendas:
+office_stationery:
+  translations:
+    es: implementos para oficina
+
+office_stationery_agendas:
   translations:
     es: agendas
   synonyms:
+    - paper
     - cuadernos
     - libretas
     - notebook
-
 
 # Health
 health:
@@ -751,6 +889,11 @@ health:
 health_beauty:
   translations:
     es: belleza
+
+health_beauty_saloon:
+  translations:
+    es: salón de belleza
+    en: beauty saloon
   synonyms:
     - peluquerias
     - hairdressing
@@ -764,3 +907,96 @@ health_gym:
 health_drugstore:
   translations:
     es: droguería
+
+health_optics:
+  translations:
+    es: ópticas
+
+health_sports:
+  translations:
+    es: deportes
+
+health_sports_soccer:
+  translations:
+    es: fútbol
+
+health_sports_bowling:
+  translations:
+    es: bolos
+  synonyms:
+    - bolerama
+
+
+# Education
+education:
+  translations:
+    es: educación
+
+education_school:
+  translations:
+    es: colegios
+
+education_university:
+  translations:
+    es: universidades
+
+education_library:
+  translations:
+    es: librerías
+  synonyms:
+    - books
+    - libros
+
+education_institute:
+  translations:
+    es: institutos
+
+education_institute_driving:
+  translations:
+    es: institutos de conducción
+
+
+# Lifestyle
+lifestyle:
+  translations:
+    es: estilo de vida
+
+lifestyle_tattoo:
+  translations:
+    es: tatuajes
+
+lifestyle_pets:
+  translations:
+    es: mascotas
+
+lifestyle_comics:
+  translations:
+    es: comics
+  synonyms:
+    - marvel
+    - dc comics
+    - superman
+    - justice league
+    - liga de la justicia
+
+# Lifestyle (Music)
+lifestyle_music:
+  translations:
+    es: música
+  
+lifestyle_music_instruments:
+  translations:
+    es: instrumentos musicales
+    en: musical instruments
+
+
+# Adult
+adult:
+  translations:
+    es: adultos
+
+
+# Politics
+politics:
+  translations:
+    es: política
