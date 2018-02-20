@@ -6,9 +6,9 @@
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/@types/is/-/is-0.0.18.tgz#7d0c575f935109be88c47dc0ea3c5075f81cf3c7"
 
-"@types/jest@21.1.10":
-  version "21.1.10"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-21.1.10.tgz#dcacb5217ddf997a090cc822bba219b4b2fd7984"
+"@types/jest@22.1.3":
+  version "22.1.3"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.1.3.tgz#25da391935e6fac537551456f077ce03144ec168"
 
 "@types/node@8.5.2":
   version "8.5.2"
