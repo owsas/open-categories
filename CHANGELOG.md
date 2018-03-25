@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.2.0
+* chainStores was migrated to supermarket
+* Created map icons
+
 ## v1.1.0
 
 ### New categories
