@@ -675,11 +675,10 @@ cultureEvents_events:
   translations:
     es: eventos
 
-# Chain stores
-chainStores:
+# Supermarket
+supermarket:
   translations:
-    es: almacenes de cadena
-    en: chain stores
+    es: supermercados
   related:
     - food
     - fashion
