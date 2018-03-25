@@ -1,7 +1,9 @@
 src/
+map-icons/
 test/
 node_modules/
 coverage/
 .vscode/
+renovate.json
 tsconfig.json
 tslint.json
