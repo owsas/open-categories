@@ -25,7 +25,7 @@
     "typescript": "3.9.6"
   },
   "dependencies": {
-    "array-uniq": "^1.0.3",
+    "array-uniq": "^2.0.0",
     "fuse.js": "^6.0.0",
     "is": "^3.2.1",
     "js-yaml": "^3.10.0",
