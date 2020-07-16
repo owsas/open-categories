@@ -22,7 +22,7 @@
     "ts-jest": "22.4.2",
     "tslint": "5.9.1",
     "tslint-config-airbnb": "5.7.0",
-    "typescript": "3.9.6"
+    "typescript": "3.9.7"
   },
   "dependencies": {
     "array-uniq": "^1.0.3",
