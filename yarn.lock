@@ -37,9 +37,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@types/is@0.0.19":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@types/is/-/is-0.0.19.tgz#0fd42363a1233c70659b5a5373d6309a68a07022"
+"@types/is@0.0.21":
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/@types/is/-/is-0.0.21.tgz#1f4b0afe428991564abbd890844eba2458bc83e6"
+  integrity sha512-j2v73mj4I47lOaA8r+5tknsgsqlRPDN224sS0Y7ORzlx3AXxqL6RhK/BRhEMP98RJIVW7WTnXZ9ZqQSNdWWuwg==
 
 "@types/jest@22.1.3":
   version "22.1.3"
