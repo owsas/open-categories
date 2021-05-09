@@ -183,9 +183,10 @@ array-reduce@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
 
-array-uniq@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/array-uniq/-/array-uniq-1.0.3.tgz#af6ac877a25cc7f74e058894753858dfdb24fdb6"
+array-uniq@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/array-uniq/-/array-uniq-3.0.0.tgz#78e5b7d36375ba570e26aebcb8640aced9be5090"
+  integrity sha512-T/3qyw9JTDHjj+aIo4uQyHCAoG1DkFqFViq0e6uPzkXwT74MEPsmQ30rxx8x9+yjBQ3KJ2bXOb2bBKC1FwEjdw==
 
 array-unique@^0.2.1:
   version "0.2.1"
